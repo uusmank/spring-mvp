@@ -1,0 +1,45 @@
+
+
+###Get All Products
+GET http://localhost:8080/api/product
+### Save Product
+POST http://localhost:8080/api/product
+Content-Type: application/json
+
+{
+    "name": "iPhone 15 Pro",
+    "price": 1000.0,
+    "weight": 1.5,
+    "quantity": 100,
+    "status": "ACTIVE",
+    "createdAt": "2024-08-04T00:25:04.494261",
+    "updatedAt": "2024-08-04T00:25:04.494285"
+  }
+### Get Product By ID
+GET http://localhost:8080/api/product/2
+
+### Update PRoduct
+PUT http://localhost:8080/api/product/2
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "iPhone15Pro",
+    "price": 1100.0,
+    "weight": 1.5,
+    "quantity": 100,
+    "status": "ACTIVE",
+    "createdAt": "2024-08-04T00:25:04.494261",
+    "updatedAt": "2024-08-04T00:25:04.494285"
+  }
+
+### Delete Product By ID
+DELETE http://localhost:8080/api/product/1
+
+
+### Get Product By Name
+GET http://localhost:8080/api/product/filter/iPhone
+
+
+### Get Product By Status
+GET http://localhost:8080/api/product/filter/status/ACTIVe
